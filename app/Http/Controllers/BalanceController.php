@@ -56,7 +56,7 @@ class BalanceController extends Controller
         // get total price result
         $total = $this->total;
 
-        $deposits_total  = Deposit::sum('amount');
+        $deposits_total  = Deposit::where('company', 'smi')->sum('amount');
 
         // get total price result
 
